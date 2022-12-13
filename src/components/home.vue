@@ -14,7 +14,7 @@
         </div>
         </div>
         <div class="set-button-div">
-          <button class="set-button"><a href="/#/singup" class="set-color-a">Find The Right Employee</a></button>
+          <button class="set-button"><a href="/safe-recruits/dist/#/singup" class="set-color-a">Find The Right Employee</a></button>
           <button class="set-button">Build or Upload Your CV</button>
         </div>
       </div>
