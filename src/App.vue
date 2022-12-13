@@ -37,7 +37,7 @@
       </div>
      <div id="footer">
         <div class="footer-first footer-set-first">   Safe Recruits </div>
-        <div class="footer-first">  contact@saferecruits.com </div>
+        <div class="footer-first"> <a href="mailto:contact@saferecruits.com" class="set-color-a"> contact@saferecruits.com </a></div>
         <div class="footer-first">  ©2022 by Safe Recruits Limited  </div>
       </div>
     
@@ -77,9 +77,9 @@ body{
   min-height: 500px;
   background-color: #025955fa;
 }
-.container{
+/* .container{
   max-width: 75%;
-}
+} */
 #app {
   /* font-family: 'Avenir', Helvetica, Arial, sans-serif; */
   -webkit-font-smoothing: antialiased;
@@ -87,6 +87,12 @@ body{
   text-align: center;
   /* color: #2c3e50; */
   margin-top: 70px;
+  color: white;
+}
+.set-color-a{
+  color: white;
+}
+.set-color-a:hover{
   color: white;
 }
 .header-menu{
@@ -112,7 +118,7 @@ body{
     line-height: 3;
 }
 .footer-set-first{
-   font-size: 16px;
+   font-size: 22px;
 }
 .moveInUp-enter-active{
   animation: fadeIn 2s ease-in;

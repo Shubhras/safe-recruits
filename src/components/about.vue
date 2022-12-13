@@ -29,9 +29,6 @@
 </script>
 
 <style scoped>
-.img-fluid{
-  filter: brightness(65%);
-}
 .set-img{
 	border-radius:100%;
 }
@@ -44,11 +41,21 @@
   padding: 20px 0px;
 }
 .text-center{
-  width: 56%;
+  width: 60%;
   margin: auto;
   margin-bottom: 25px;
   line-height: 2;
 }
+   @media only screen and (max-width: 1024px){
+     .text-center{
+       width:100%;
+     }
+   }
+    @media only screen and (max-width: 1600px){
+      .text-center{
+         width:72%;
+     }
+   }
 .set-button-div{
     margin: 37px 0px;
 }
@@ -62,7 +69,6 @@
   padding: 15px 25px;
   border-radius: 22px;
   margin: 0px 30px;
-
   background: #e6e8fa;
 }
 .set-button:hover{

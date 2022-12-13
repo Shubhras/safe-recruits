@@ -4,8 +4,9 @@
 	 <div>
 		<div class="top-test">Test Scheduler</div>
 		<div class="top-test bottom-set">Pick a date below to book a test</div>
+		<button class="set-button">Submit</button>
 	 </div>
-	 	<button class="set-button">Submit</button>
+	 	
 	</div>
 </template>
 <script>
@@ -22,7 +23,8 @@
 <style scoped>
 
 .bookatest{
-	height: 500px;
+    min-height: 500px;
+	position:relative;
 }
 .top-test{
 	font-size: 56px;
@@ -38,9 +40,10 @@
     background-color: #D7F7FC;
     border-width: 0px;
     margin-top: 15px;
-    padding: 10px 20px;
-	position: relative;
-    top: 70px;
+    padding: 7px 40px;
+    position: absolute;
+    bottom: 0;
+    margin-left: -50px;
 }
 .set-button:hover{
 	background:#82a0a5;

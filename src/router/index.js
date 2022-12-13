@@ -7,6 +7,7 @@ import employers from '@/components/employers'
 import jobseekers from '@/components/jobseekers'
 import bookatest from '@/components/bookatest'
 import details from '@/components/details'
+import singup from '@/components/singup'
 
 Vue.use(Router)
 
@@ -51,6 +52,11 @@ export default new Router({
       path: '/details/:Pid',
       name: 'details',
       component: details
+    },
+    {
+      path: '/singup',
+      name: 'singup',
+      component: singup
     }
   ]
 })

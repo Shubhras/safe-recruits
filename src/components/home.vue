@@ -3,7 +3,7 @@
     <!-- <h1>{{title}}</h1> -->
     <div class="row">
       <div class="col-md-7 col-lg7 img-text">
-        <img src="../assets/images/home.png" class="img-fluid">
+        <img src="../assets/images/home.png" class="img-fluid" width="460" height="345">
          <!-- <h3 @click="goTodetail(data.productId)" >{{data.productTitle}}</h3> -->
       </div>
       <div class="col-md-5 col-lg5 img-text plan-text">
@@ -14,7 +14,7 @@
         </div>
         </div>
         <div class="set-button-div">
-          <button class="set-button">Find The Right Employee</button>
+          <button class="set-button"><a href="/#/singup" class="set-color-a">Find The Right Employee</a></button>
           <button class="set-button">Build or Upload Your CV</button>
         </div>
       </div>
@@ -49,11 +49,20 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-.row img{
-  /* max-height: 40em; */
+img {
+  width: 100%;
+  height: auto;
+}
+.set-color-a{
+ color: #025955;
+}
+.set-color-a:hover{
+  color: white;
+}
+/* .row img{
   width: 100%;
   height: 47em;
-}
+} */
 .row .img-text{
   padding:0 !important ;
 }
@@ -80,7 +89,7 @@ export default {
   top: 40px;
 }
 .set-button{
-  letter-spacing: 0.05em;
+  /* letter-spacing: 0.05em;s */
   font-size: 16px;
   color: #025955;
   font-family: helvetica-w01-bold,helvetica-w02-bold,helvetica-lt-w10-bold,sans-serif;

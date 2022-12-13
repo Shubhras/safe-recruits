@@ -45,7 +45,9 @@
 		<div class="set-no-plan no-plan-text">
 			Once there are plans available for purchase, you’ll see them here.
 		</div>
-		<button class="set-button">Back to Home Page</button>
+		<a href="">
+			<button class="set-button" >Back to Home Page</button>
+		</a>
 	</div>
 </template>
 <script>
