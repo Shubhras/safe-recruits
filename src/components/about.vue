@@ -10,7 +10,7 @@
 	<div class="text-center">We invite you to contact one of our team members today. They are committed to providing you, our clients, with an experience focused on what you value most.</div>
 
 	<div class="set-button-div">
-      <button class="set-button">Find The Right Employee</button>
+      <button class="set-button"><a href="/safe-recruits/dist/#/signup" class="set-color-a">Find The Right Employee</a></button>
       <button class="set-button">Build or Upload Your CV</button>
   </div>
 	
@@ -32,6 +32,12 @@
 .set-img{
 	border-radius:100%;
 }
+.set-color-a{
+ color: #025955;
+}
+.set-color-a:hover{
+  color: white;
+}
 .img-gap{
   padding: 70px 0px 40px 0px;
 }
@@ -41,7 +47,7 @@
   padding: 20px 0px;
 }
 .text-center{
-  width: 60%;
+  width: 50%;
   margin: auto;
   margin-bottom: 25px;
   line-height: 2;
@@ -51,9 +57,9 @@
        width:100%;
      }
    }
-    @media only screen and (max-width: 1600px){
-      .text-center{
-         width:72%;
+    @media only screen and (max-width: 1500px) and (min-width: 1025px)  {
+     .text-center{
+       width:70%;
      }
    }
 .set-button-div{
@@ -68,7 +74,7 @@
   border: none;
   padding: 15px 25px;
   border-radius: 22px;
-  margin: 0px 30px;
+  margin: 10px 30px;
   background: #e6e8fa;
 }
 .set-button:hover{

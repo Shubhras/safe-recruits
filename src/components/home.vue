@@ -2,11 +2,11 @@
   <div class="home">
     <!-- <h1>{{title}}</h1> -->
     <div class="row">
-      <div class="col-md-7 col-lg7 img-text">
+      <div class="col-md-6 col-lg6 img-text">
         <img src="../assets/images/home.png" class="img-fluid" width="460" height="345">
          <!-- <h3 @click="goTodetail(data.productId)" >{{data.productTitle}}</h3> -->
       </div>
-      <div class="col-md-5 col-lg5 img-text plan-text">
+      <div class="col-md-6 col-lg6 img-text plan-text">
         <div class="set-text">
          <span> Welcome to</span><span> Safe Recruits</span>
          <div class="set-last-text">
@@ -14,7 +14,7 @@
         </div>
         </div>
         <div class="set-button-div">
-          <button class="set-button"><a href="/safe-recruits/dist/#/singup" class="set-color-a">Find The Right Employee</a></button>
+          <button class="set-button"><a href="/safe-recruits/dist/#/signup" class="set-color-a">Find The Right Employee</a></button>
           <button class="set-button">Build or Upload Your CV</button>
         </div>
       </div>
@@ -79,15 +79,25 @@ img {
   font-weight: 100;
   display: grid;
   position: relative;
-  margin: 130px 0px 18px calc((100% - 490px) * 0.5);
+  padding: 130px 0px 18px 0px;
 }
+@media only screen and (max-width: 1320px){
+     .set-text{
+       padding:0;
+     }
+   }
+  @media only screen and (max-width: 768px){
+   .set-text{
+      font-size: 50px;
+    }
+  }
 .set-last-text{
   font-size:20px;
 }
-.set-button-div{
+/* .set-button-div{
   position: relative;
   top: 40px;
-}
+} */
 .set-button{
   /* letter-spacing: 0.05em;s */
   font-size: 16px;
@@ -97,7 +107,7 @@ img {
   border: none;
   padding: 10px 15px;
   border-radius: 22px;
-  margin: 0px 3px;
+  margin: 12px 3px;
   background: #e6e8fa;
 }
 .set-button:hover{

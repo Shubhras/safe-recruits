@@ -4,8 +4,8 @@
 		<div class="text-center">At Safe Recruits, we’ll keep you connected to top talent, whenever and wherever you need it. Contact us today so we can help you find the perfect people best suited for your needs and requirements. We make sure to create the perfect fit between companies and employees so that both sides are happy in the end. Let us help you today.</div>
 
 		<div class="container1">
-       		<div class="col-md-6 col-lg6 img-text">
-        	  <img src="../assets/images/employer1.png" class="img-fluid img-fluid1">
+       		<div class="col-md-6 col-lg6 img-text ">
+        	  <img src="../assets/images/employer1.png" class="img-fluid img-fluid1 set-img-media">
 			     <div class="text-block">
             	  <h4>Position Recruitment</h4>
             	  <p>You dont have a shortlist of applicants yet?
@@ -13,7 +13,7 @@
                      A truly seamless experience </p>
                 </div>
      	    </div>
-			 	<div class="col-md-6 col-lg6 img-text">
+			 	<div class="col-md-6 col-lg6 img-text ">
         	  <img src="../assets/images/employer2.png" class="img-fluid img-fluid1">
 			     <div class="text-block">
             	  <h4>Candidate Testing</h4>
@@ -25,7 +25,7 @@
      	    </div>
 		</div>
 		<div class="set-button-div">
-    	  <button class="set-button">Find The Right Employee</button>
+    	  <button class="set-button"><a href="/safe-recruits/dist/#/signup" class="set-color-a">Find The Right Employee</a></button>
     	  <button class="set-button">Build or Upload Your CV</button>
     	</div>
 	</div>
@@ -42,12 +42,44 @@
 </script>
 
 <style scoped>
+.set-color-a{
+ color: #025955;
+}
+.set-color-a:hover{
+  color: white;
+}
 .img-fluid1{
   filter: brightness(65%);
+}
+ @media only screen and (max-width: 1120px) and (min-width: 901px)  {
+     .img-fluid{
+       height: 500px;
+     }
+   }
+   @media only screen and (max-width: 600px){
+	 .img-fluid{
+       height: 500px;
+     }
 }
 .container1 {
   position: relative;
   display: flex;
+}
+    
+ @media only screen and (max-width: 900px){
+     .container1{
+       display: block !important;
+     }
+}
+@media only screen and (max-width: 900px){
+	.col-md-6 {
+      max-width: 100%;
+    }
+}
+@media only screen and (max-width: 900px){
+	.set-img-media{
+    	margin-bottom: 20px;
+	}
 }
 .our-services{
 	font-size:40px;
@@ -62,12 +94,28 @@
     text-align: justify;
     color: white;
 }
+    
+ @media only screen and (max-width: 600px){
+     .text-block{
+      width: 80%;
+     }
+}
 .text-center{
-  width: 56%;
+  width: 60%;
   margin: auto;
   margin-bottom: 25px;
   line-height: 2;
 }
+ @media only screen and (max-width: 1124px){
+     .text-center{
+       width:100%;
+     }
+   }
+     @media only screen and (max-width: 1500px) and (min-width: 1125px)  {
+     .text-center{
+       width:70%;
+     }
+   }	
 .set-button-div{
   position: relative;
   top: 40px;
@@ -81,7 +129,7 @@
   border: none;
   padding: 15px 25px;
   border-radius: 22px;
-  margin: 0px 30px;
+  margin: 15px 30px;
   background: #e6e8fa;
 }
 .set-button:hover{

@@ -77,9 +77,9 @@ body{
   min-height: 500px;
   background-color: #025955fa;
 }
-/* .container{
-  max-width: 75%;
-} */
+.container{
+ max-width: 90%;
+}
 #app {
   /* font-family: 'Avenir', Helvetica, Arial, sans-serif; */
   -webkit-font-smoothing: antialiased;
@@ -96,7 +96,7 @@ body{
   color: white;
 }
 .header-menu{
-    color: #fff !important;
+    /* color: #fff !important; */
     font-size: 15px;
     border-right: 1px solid;
     margin-right: 0px;

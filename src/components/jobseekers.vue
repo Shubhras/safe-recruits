@@ -8,7 +8,7 @@
 
 		<div class="container1">
        		<div class="col-md-6 col-lg6 img-text">
-        	  <img src="../assets/images/job-seekers1.png" class="img-fluid img-fluid1">
+        	  <img src="../assets/images/job-seekers1.png" class="img-fluid img-fluid1 set-img-media">
 			     <div class="text-block">
             	  <h4>CV Assistance</h4>
             	  <p>We want to make sure that you’re always on top of your game. Use our CV builder which includes the option to let us know what type of work you’re looking for, what your qualifications are, and we’ll be sure to find the positions that interest you most. At Safe Recruits, we want you to succeed and won’t quit until you do.</p>
@@ -23,7 +23,7 @@
      	    </div>
 		</div>
 		<div class="set-button-div">
-    	  <button class="set-button">Find The Right Employee</button>
+    	  <button class="set-button"><a href="/safe-recruits/dist/#/signup" class="set-color-a">Find The Right Employee</a></button>
     	  <button class="set-button">Build or Upload Your CV</button>
     	</div>
 	</div>
@@ -40,12 +40,46 @@
 </script>
 
 <style scoped>
+.set-color-a{
+ color: #025955;
+}
+.set-color-a:hover{
+  color: white;
+}
+.img-fluid{
+	width: 100%;
+}
+ @media only screen and (max-width: 1120px) and (min-width: 901px)  {
+     .img-fluid{
+       height: 500px;
+     }
+   }
+   @media only screen and (max-width: 600px){
+	 .img-fluid{
+       height: 500px;
+     }
+}
 .img-fluid1{
   filter: brightness(65%);
 }
-	.container1 {
+.container1 {
   position: relative;
   display: flex;
+}
+ @media only screen and (max-width: 900px){
+     .container1{
+       display: block !important;
+     }
+}
+@media only screen and (max-width: 900px){
+	.col-md-6 {
+      max-width: 100%;
+    }
+}
+@media only screen and (max-width: 900px){
+	.set-img-media{
+    	margin-bottom: 20px;
+	}
 }
 .our-services{
 	font-size:40px;
@@ -60,12 +94,27 @@
     text-align: justify;
     color: white;
 }
+ @media only screen and (max-width: 600px){
+     .text-block{
+      width: 80%;
+     }
+}
 .text-center{
-  width: 56%;
+  width: 60%;
   margin: auto;
   margin-bottom: 25px;
   line-height: 2;
 }
+ @media only screen and (max-width: 1124px){
+     .text-center{
+       width:100%;
+     }
+   }
+     @media only screen and (max-width: 1500px) and (min-width: 1125px)  {
+     .text-center{
+       width:70%;
+     }
+   }	
 .set-button-div{
   position: relative;
   top: 40px;
@@ -79,7 +128,7 @@
   border: none;
   padding: 15px 25px;
   border-radius: 22px;
-  margin: 0px 30px;
+  margin: 15px 30px;
   background: #e6e8fa;
 }
 .set-button:hover{
