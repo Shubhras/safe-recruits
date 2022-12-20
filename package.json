@@ -10,8 +10,11 @@
     "build": "node build/build.js"
   },
   "dependencies": {
+    "md-dialog": "0.0.1-alpha.1",
     "serve": "^14.1.2",
     "vue": "^2.5.2",
+    "vue-m-dialog": "^3.0.0",
+    "vue-material-modal-dialog": "^0.3.0",
     "vue-router": "^3.0.1"
   },
   "devDependencies": {

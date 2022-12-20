@@ -7,7 +7,7 @@ import employers from '@/components/employers'
 import jobseekers from '@/components/jobseekers'
 import bookatest from '@/components/bookatest'
 import details from '@/components/details'
-import signup from '@/components/signup'
+// import signup from '@/components/signup'
 
 Vue.use(Router)
 
@@ -53,10 +53,10 @@ export default new Router({
       name: 'details',
       component: details
     },
-    {
-      path: '/signup',
-      name: 'signup',
-      component: signup
-    }
+    // {
+    //   path: '/signup',
+    //   name: 'signup',
+    //   component: signup
+    // }
   ]
 })

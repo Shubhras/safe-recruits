@@ -3,7 +3,7 @@
       <!-- navbar -->
       <div class="navbar navbar-expand-lg fixed-top navbar-dark bg-color">
         <div class="container">
-        <router-link to="/" class="navbar-brand header-menu">Home</router-link>
+        <router-link to="/" class="navbar-brand first-set">Home</router-link>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
         </button>
@@ -11,7 +11,7 @@
           <ul class="navbar-nav">
       
             <li class="nav-item">
-              <router-link class="nav-link header-menu" to="/about">About</router-link>
+              <router-link class="nav-link header-menu" style="border-left: 1px solid;" to="/about">About</router-link>
             </li>
             <li class="nav-item">
             <router-link class="nav-link header-menu" to="/employers">Employers</router-link>
@@ -47,45 +47,27 @@
 <script>
 export default {
   name: 'App',
-//  data() {
-//     return {
-//       windowHeight: window.innerHeight
-//     }
-//   },
-
-//   mounted() {
-//     this.$nextTick(() => {
-//       window.addEventListener('resize', this.onResize);
-//     })
-//   },
-
-//   beforeDestroy() { 
-//     window.removeEventListener('resize', this.onResize); 
-//   },
-
-//   methods: {  
-//     onResize() {
-//       this.windowHeight = window.innerHeight
-//     }
-//   }
-
 }
 </script>
 
 <style>
+.first-set{
+      padding: 0px;
+    font-size: 16px;
+    margin: 6px 1px 0px 6px;
+}
 body{
   min-height: 500px;
   background-color: #025955fa;
+  font-size:15px;
 }
 .container{
  max-width: 90%;
 }
 #app {
-  /* font-family: 'Avenir', Helvetica, Arial, sans-serif; */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  /* color: #2c3e50; */
   margin-top: 70px;
   color: white;
 }
@@ -96,7 +78,6 @@ body{
   color: white;
 }
 .header-menu{
-    /* color: #fff !important; */
     font-size: 15px;
     border-right: 1px solid;
     margin-right: 0px;
@@ -105,9 +86,7 @@ body{
 #footer{
   background-color:#005951;
   position: absolute;
-  /* bottom: 0; */
   width: 100%;
-  /* z-index: 1000; */
   margin: 60px 0px 0px 0px;
 }
 .last-menu{
@@ -149,5 +128,48 @@ body{
   100%{
   transform: translateY(-400px);
  }
+}
+.modal-header .close {
+  margin: 0rem -1rem -1rem auto;
+  font-size: 40px;
+  padding: 18px 8px 0px 0px;
+}
+.top-test {
+  color: #005951;
+  padding: 20px 0px;
+}
+.sing-up {
+  background-color: white;
+}
+.email {
+  background-color: #025955fa;
+  color: white;
+  border: #f3f2f0;
+  height: 37px;
+  border-radius: 3px;
+  min-width: 249px;
+  padding: 0px 10px;
+}
+.last-test {
+  padding-bottom: 20px;
+  font-size: 18px;
+  color: #005951;
+  cursor: pointer;
+}
+.modal {
+  /* position: relative; */
+  position: absolute;
+  top: 25%;
+  font-size: 16px;
+  color: black;
+}
+.fade:not(.show) {
+  opacity: 1 !important;
+}
+.modal-footer > * {
+  margin: 0.25rem;
+  font-size: 16px;
+  border: 1px solid;
+  border-radius: 10px;
 }
 </style>
