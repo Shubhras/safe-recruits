@@ -30,6 +30,7 @@
 	font-size: 56px;
     font-weight: 100;
     padding: 40px 0px;
+	color:white;
 }
 .bottom-set{
 	font-size: 18px;
