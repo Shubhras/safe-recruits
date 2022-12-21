@@ -2,7 +2,7 @@
   <div id="app">
     <!-- navbar -->
     <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-color">
-      <div class="container">
+      <div class="container" style="position: relative;">
         <router-link to="/" class="navbar-brand first-set">Home</router-link>
         <button
           class="navbar-toggler"
@@ -12,8 +12,8 @@
           aria-controls="navbarResponsive"
           aria-expanded="true"
           aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
+        style="margin:15px 0px 0px 0px;">
+          <span class="navbar-toggler-icon" ></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav mr-auto">
@@ -75,7 +75,9 @@ export default {
 <style>
 @media (max-width: 768px) {
   .collapse.in {
-    display: block !important;
+    display: block !important;  }
+  .navbar .container {
+    display: block;
   }
 }
 @media (min-width: 768px) {
