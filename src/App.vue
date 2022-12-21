@@ -2,7 +2,7 @@
   <div id="app">
     <!-- navbar -->
     <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-color">
-      <div class="container" style="position: relative;">
+      <div class="container" style="position: relative">
         <router-link to="/" class="navbar-brand first-set">Home</router-link>
         <button
           class="navbar-toggler"
@@ -12,8 +12,9 @@
           aria-controls="navbarResponsive"
           aria-expanded="true"
           aria-label="Toggle navigation"
-        style="margin:15px 0px 0px 0px;">
-          <span class="navbar-toggler-icon" ></span>
+          style="margin: 15px 0px 0px 0px; float: right"
+        >
+          <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav mr-auto">
@@ -73,18 +74,52 @@ export default {
 </script>
 
 <style>
-@media (max-width: 768px) {
+/* @media (min-width:768px) and (max-width:991px){
+  .navbar-nav {
+    flex-direction: row !important;
+}
+button.navbar-toggler {
+    display: none !important;
+} */
+/* div#navbarResponsive {
+    position: absolute;
+}
+a.navbar-brand.first-set.router-link-active {
+    position: relative;
+    right: 51%;
+} */
+/* } */
+@media (max-width: 767px) {
+  .navbar-nav {
+    margin: 50px -14px 0px 0px;
+  }
+}
+@media (max-width: 767px) {
   .collapse.in {
-    display: block !important;  }
+    display: block !important;
+  }
   .navbar .container {
     display: block;
   }
 }
-@media (min-width: 768px) {
-  /* .collapse:not(.show) {
+@media (min-width: 768px) and (max-width:991px) {
+  .collapse:not(.show) {
     display: none !important;
-  } */
+  }
 }
+
+ @media (min-width:768px) and (max-width:991px){
+  .collapse.in {
+    display: block !important;
+  }
+  .navbar .container {
+    display: block;
+  }
+  .navbar-nav {
+    margin: 50px -14px 0px 0px;
+  }
+}
+
 .first-set {
   padding: 0px;
   font-size: 16px;

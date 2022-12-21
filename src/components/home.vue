@@ -112,6 +112,12 @@ img {
   width: 100%;
   height: auto;
 }
+@media (min-width: 768px) and (max-width:800px) {
+  img {
+    height: 316px;
+
+  }
+}
 .set-color-a {
   color: #025955;
 }
@@ -145,11 +151,17 @@ img {
     padding: 0;
   }
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
   .set-text {
     font-size: 50px;
   }
 }
+@media (min-width: 768px) and (max-width:991px) {
+  .set-text {
+   font-size: 40px;
+  }
+}
+
 .set-last-text {
   font-size: 20px;
 }
